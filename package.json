@@ -7,7 +7,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "clean": "rm dist/bundle.js",
+    "clean": "del-cli dist",
     "watch": "webpack -d --mode development --watch",
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production"
