@@ -45,13 +45,12 @@ const config = {
             options: {
                 plugins: [
                   autoprefixer({
-                    browsers:['ie >= 8', 'last 4 version']
+                    overrideBrowserslist: [ "defaults" ]
                   })
                 ],
                 sourceMap: true
             }
           },
-          // { loader: 'resolve-url-loader'},
           { loader: 'sass-loader' }
         ]
       },
