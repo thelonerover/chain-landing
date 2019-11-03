@@ -1,3 +1,20 @@
+// Abstracts
 @import './abstracts/variables';
+
+//Base
 @import './base/base';
+
+//Vendors
 @import './vendors/bootstrap-custom';
+
+//Components
+@import './components/benefits';
+@import './components/faq';
+@import './components/featured-by';
+@import './components/main-screen';
+@import './components/nav';
+@import './components/sign-up';
+@import './components/team';
+@import './components/tickers';
+@import './components/titles';
+@import './components/why-us';

@@ -63,7 +63,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/assets/index.html',
+      template: 'src/pages/index.html',
       title: 'Construction Co.'
     }),
     new webpack.ProvidePlugin({
@@ -73,7 +73,7 @@ const config = {
       "window.$": "jquery"
     }),
     new CopyWebpackPlugin([
-      {from:'src/images',to:'images'} 
+      {from:'src/images', to:'images'} 
     ]), 
   ],
   optimization: {
