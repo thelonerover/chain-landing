@@ -5,7 +5,7 @@ const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
-  entry: './src/index.js',
+  entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
@@ -63,7 +63,7 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/pages/index.html',
+      template: 'src/assets/pages/index.html',
       title: 'Construction Co.'
     }),
     new webpack.ProvidePlugin({
@@ -73,7 +73,7 @@ const config = {
       "window.$": "jquery"
     }),
     new CopyWebpackPlugin([
-      {from:'src/images', to:'images'} 
+      {from:'src/assets/images', to:'images'} 
     ]), 
   ],
   optimization: {
