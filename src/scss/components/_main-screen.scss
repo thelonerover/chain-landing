@@ -1,8 +1,12 @@
 .main-screen {
-    background: url(../assets/images/main.svg);
+    padding-top: 220px;
+    margin-bottom: 180px;
+    min-height: 890px;
+    background-image: url(../assets/images/main.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
 
     &__title {
-        margin-top: 220px;
         margin-bottom: $md;
     }
 
