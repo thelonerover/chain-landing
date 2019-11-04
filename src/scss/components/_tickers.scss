@@ -1,4 +1,6 @@
 .tickers {
+    margin-bottom: 180px;
+    
     &__row {
         margin-bottom: 15px;
     }
@@ -107,7 +109,6 @@
 
     &__exchange-info-content {
         position: relative;
-        display: block;
         font-family: $gilroy;
         font-weight: 300;
         font-size: 1.5rem;
@@ -115,30 +116,57 @@
     }
 
     &__exchange-info-content_separated {
-        &:after {
-            position: absolute;
-            right: 0;
-            top: 0;
-            content: '';
-            display: block;
-            background-color: $white;
-            height: 23px;
-            width: 1px;
-        }
+        padding-right: 20px;
+        margin-right: 20px;
+        border-right: 1px solid $white;
     }
 
     &__table {
         width: 100%;  
+        margin-bottom: 40px;
         border-collapse: collapse; 
         table-layout: fixed;
     }
 
     &__thead {
-        border-bottom: 2px solid $stroke;
+        border-bottom: 1px solid $stroke;
     }
     
     &__th {
         padding: 10px;
+        font-family: $gilroy;
+        font-weight: 800;
+        font-size: 1.1rem;
+        text-align: left;
+    }
 
+    &__td {
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        font-family: $gilroy;
+        font-weight: 300;
+        font-size: 1.3rem;
+        vertical-align: middle;
+    }
+
+    &__td_bold {
+        font-weight: 800;
+    }
+
+    &__table-expand {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: $gilroy;
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: $black;
+        background: none;
+        outline: none;
+        border: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
