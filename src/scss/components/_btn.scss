@@ -1,5 +1,5 @@
 .btn {
-    padding: 10px 30px;
+    padding: 20px 30px;
     font-family: $gilroy;
     font-weight: 800;
     font-size: 1em;
@@ -20,5 +20,13 @@
     &_outline_white {
         color: $white;
         border-color: $white;
+    }
+
+    &_full-w {
+        width: 100%;
+    }
+
+    &_full-h {
+        height: 100%;
     }
 }

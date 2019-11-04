@@ -1,6 +1,6 @@
 .sign-up-form {
     &__field {
-        width: 400px;
+        width: 100%;
         padding: 20px 25px;
         font-family: $gilroy;
         font-weight: 800;
@@ -20,10 +20,19 @@
         }
     }
 
+    &__row {
+        margin-bottom: 15px;
+    }
+
     &__warning {
+        display: block;
         font-family: $gilroy;
         font-weight: 400;
         font-size: 1rem;
+    }
+
+    &__warning_centered {
+        text-align: center;
     }
 
     &__link {
@@ -38,6 +47,8 @@
 
     &_vertical {
         > .sign-up-form__field {
+            width: 400px;
+
             &:not(:last-child) {
                 margin-bottom: 30px;
             }
