@@ -1,0 +1,28 @@
+.benefits {
+    margin-bottom: 180px;
+    
+    &__row {
+        margin-bottom: $lg;
+    }
+
+    &__icon {
+        display: block;
+        max-height: 80px;
+        margin-bottom: $xs;
+    }
+
+    &__title {
+        margin-bottom: $xs;
+        font-family: $gilroy;
+        font-weight: 800;
+        font-size: 1.3rem;
+        color: $black;
+    }
+
+    &__content {
+        font-family: $gilroy;
+        font-weight: 400;
+        font-size: 1.1rem;
+        color: $black;
+    }
+}

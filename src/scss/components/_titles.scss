@@ -8,3 +8,15 @@
         color: $accent;
     }
 }
+
+.h2 {
+    margin-bottom: $lg;
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 2.6rem;
+    color: $black;
+
+    &__accent {
+        color: $accent;
+    }
+}

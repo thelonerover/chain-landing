@@ -1,0 +1,30 @@
+.why-us {
+    margin-bottom: 180px;
+    
+    &__decoration {
+        display: block;
+        height: 410px;
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__row {
+        margin-bottom: 50px;
+    }
+
+    &__value {
+        display: block;
+        font-family: $gilroy;
+        font-weight: 800;
+        font-size: 2rem;
+        color: $theme;
+    }
+
+    &__label {
+        font-family: $gilroy;
+        font-weight: 300;
+        font-size: 1.1rem;
+        color: $black;
+    }
+}
