@@ -1,0 +1,78 @@
+.tickers {
+    &__row {
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__item {
+        padding: 20px;
+        border: 1px solid $l-stroke;
+    }
+
+    &__exchange {
+        display: block;
+        margin-bottom: 10px;
+        font-family: $gilroy;
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: $black;
+    }
+
+    &__value-wrapper {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__value {
+        margin-right: 10px;
+        font-family: $gilroy;
+        font-weight: 800;
+        font-size: 2rem;
+        color: $black;
+    }
+
+    &__rate {
+        padding: 5px 10px;
+        font-family: $gilroy;
+        font-weight: 800;
+        font-size: 1rem;
+        color: $white;
+        background-color: $gray;
+        border-radius: 4px;
+        vertical-align: middle;
+    }
+
+    &_rate_plus {
+        background-color: $green;
+    }
+
+    &_rate_minus {
+        background-color: $red;
+    }
+
+    &__label {
+        margin-bottom: 5px;
+        display: block;
+        font-family: $gilroy;
+        font-weight: 300;
+        font-size: 1rem;
+        color: $black;
+    }
+
+    &__sub-value {
+        display: block;
+        font-family: $gilroy;
+        font-weight: 800;
+        font-size: 1.1rem;
+        color: $black;
+    }
+
+    &_sub-value_mb {
+        margin-bottom: 15px;
+    }
+}

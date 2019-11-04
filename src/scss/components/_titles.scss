@@ -19,4 +19,11 @@
     &__accent {
         color: $accent;
     }
+
+    &__subtitle {
+        font-family: $gilroy;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: $black;
+    }
 }
