@@ -1,0 +1,54 @@
+.sign-up-form {
+    &__field {
+        width: 400px;
+        padding: 20px 25px;
+        font-family: $gilroy;
+        font-weight: 800;
+        font-size: 1.1rem;
+        color: $theme;
+        border: 2px solid $stroke;
+        border-radius: 4px;
+        outline: none;
+
+        &::placeholder {
+            font-weight: 300;
+        }
+
+        &:focus {
+            border-color: $l-stroke;
+            box-shadow: 0 0 6px 3px rgba(97, 148, 165, 0.24);
+        }
+    }
+
+    &__warning {
+        font-family: $gilroy;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    &__link {
+        font-weight: 800;
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &_vertical {
+        > .sign-up-form__field {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        > .sign-up-form__submit {
+            display: block;
+            width: 400px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+        }
+    }
+}

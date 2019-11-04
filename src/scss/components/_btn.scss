@@ -5,12 +5,16 @@
     font-size: 1em;
     line-height: 1.2em;
     text-align: center;
-    background: none;
-    border: 2px solid $accent;
     border-radius: 4px;
-
+    text-decoration: none;
+    color: $black;
+    background-color: $accent;
+    outline: none;
+    border: none;
+    
     &_outline {
-
+        border: 2px solid $accent;
+        background: none;
     }
 
     &_outline_white {

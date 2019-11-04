@@ -1,0 +1,10 @@
+.h1 {
+    font-family: $gilroy;
+    font-weight: 800;
+    font-size: 3rem;
+    color: $black;
+
+    &__accent {
+        color: $accent;
+    }
+}
