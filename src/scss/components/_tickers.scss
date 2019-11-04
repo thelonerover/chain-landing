@@ -47,14 +47,6 @@
         vertical-align: middle;
     }
 
-    &_rate_plus {
-        background-color: $green;
-    }
-
-    &_rate_minus {
-        background-color: $red;
-    }
-
     &__label {
         margin-bottom: 5px;
         display: block;
@@ -72,7 +64,81 @@
         color: $black;
     }
 
-    &_sub-value_mb {
+    &__sub-value_mb {
         margin-bottom: 15px;
+    }
+
+    &_plus {
+        background-image: url(../assets/images/plus.png);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+
+        .tickers__rate {
+            background-color: $green;
+        }
+    }
+
+    &_minus {
+        background-image: url(../assets/images/minus.png);
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+
+        .tickers__rate {
+            background-color: $red;
+        }
+    }
+
+    &__exchange-info {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 30px 60px;
+        border-radius: 8px;
+        background-color: $theme;
+    }
+
+    &__exchange-info-title {
+        margin-bottom: 5px;
+        display: block;
+        font-family: $gilroy;
+        font-weight: 800;
+        font-size: 1.1rem;
+        color: $accent;
+    }
+
+    &__exchange-info-content {
+        position: relative;
+        display: block;
+        font-family: $gilroy;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: $white;
+    }
+
+    &__exchange-info-content_separated {
+        &:after {
+            position: absolute;
+            right: 0;
+            top: 0;
+            content: '';
+            display: block;
+            background-color: $white;
+            height: 23px;
+            width: 1px;
+        }
+    }
+
+    &__table {
+        width: 100%;  
+        border-collapse: collapse; 
+        table-layout: fixed;
+    }
+
+    &__thead {
+        border-bottom: 2px solid $stroke;
+    }
+    
+    &__th {
+        padding: 10px;
+
     }
 }
