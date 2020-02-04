@@ -1,19 +1,21 @@
 // Abstracts
 @import './abstracts/variables';
 
-//Base
-@import './base/base';
-@import './base/fonts';
-
 //Vendors
 @import './vendors/bootstrap-custom';
+@import './vendors/owl-carousel';
+
+//Base
+@import './base/base';
+@import './base/fonts'; 
 
 //Layout
 @import './layout/header';
 @import './layout/footer';
 
 //Components
-@import './components/titles';
+@import './components/typography';
+@import './components/section';
 @import './components/benefits';
 @import './components/faq';
 @import './components/featured-by';

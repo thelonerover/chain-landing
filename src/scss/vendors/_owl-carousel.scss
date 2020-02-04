@@ -1,0 +1,99 @@
+// @import "../abstracts/variables";
+
+$color-base: $accent;
+$color-white: $white;
+$color-gray: $gray;
+
+//nav
+$nav-color: 			$color-white !default;
+$nav-color-hover:		$color-white !default;
+$nav-font-size: 		14px !default;
+$nav-rounded: 			3px !default;
+$nav-margin: 			5px !default;
+$nav-padding: 			4px 7px !default;
+$nav-background: 		$color-gray !default;
+$nav-background-hover:	$color-base !default;
+$nav-disabled-opacity: 	0.5 !default;
+
+//dots
+$dot-width: 50px;
+$dot-height: 5px;
+$dot-rounded: 2px;
+$dot-margin: 0;
+$dot-background: $color-white;
+$dot-background-active:	$color-base;
+
+.owl-theme {
+    .owl-item {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+	// Styling Next and Prev buttons
+	.owl-nav {
+		margin-top: 10px;
+		text-align: center;
+		-webkit-tap-highlight-color: transparent;
+
+		[class*='owl-'] {
+			color: $nav-color;
+			font-size: $nav-font-size;
+			margin: $nav-margin;
+			padding: $nav-padding;
+			background: $nav-background;
+			display: inline-block;
+			cursor: pointer;
+			border-radius: 3px;
+
+			&:hover {
+				background: $nav-background-hover;
+				color:$nav-color-hover;
+				text-decoration: none;
+			}
+		}
+		.disabled {
+			opacity: $nav-disabled-opacity;
+			cursor: default;
+		}
+	}
+
+	// Styling dots
+	.owl-nav.disabled + .owl-dots {
+		margin-top: 3.75rem;
+	}
+
+	.owl-dots {
+		text-align: center;
+		-webkit-tap-highlight-color: transparent;
+
+		.owl-dot {
+			display: inline-block;
+			zoom: 1;
+            *display: inline;
+            border: 1px solid $gray;
+            border-radius: 2px;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+
+			span {
+				width: $dot-width;
+				height: $dot-height;
+				margin: $dot-margin;
+				background: $dot-background;
+				display: block;
+				-webkit-backface-visibility: visible;
+				transition: opacity 200ms ease;
+				border-radius: $dot-rounded;
+			}
+
+			&.active,
+			&:hover {
+				span {
+					background: $dot-background-active;
+				}
+			}
+		}
+	}
+}

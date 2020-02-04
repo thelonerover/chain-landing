@@ -8,9 +8,9 @@
   "license": "MIT",
   "scripts": {
     "clean": "del-cli dist",
-    "watch": "webpack -d --mode development --watch",
-    "build-dev": "webpack -d --mode development",
-    "build-prod": "webpack -p --mode production"
+    "start": "webpack -d --mode development --config webpack.dev.js --watch",
+    "build-dev": "webpack -d --mode --config webpack.dev.js development",
+    "build-prod": "webpack -p --mode --config webpack.prod.js production"
   },
   "dependencies": {},
   "devDependencies": {
@@ -20,23 +20,26 @@
     "autoprefixer": "^9.7.0",
     "babel-loader": "^8.0.6",
     "bootstrap": "^4.3.1",
-    "copy-webpack-plugin": "^5.0.4",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.2.0",
     "del-cli": "^3.0.0",
     "eslint": "^6.5.1",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "html-webpack-template": "^6.2.0",
+    "image-webpack-loader": "^6.0.0",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
+    "owl.carousel": "^2.3.4",
     "postcss-loader": "^3.0.0",
     "resolve-url-loader": "^3.1.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "url-loader": "^2.2.0",
     "webpack": "^4.41.1",
+    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.3.9"
   }
 }
