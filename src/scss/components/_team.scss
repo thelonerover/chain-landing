@@ -1,0 +1,27 @@
+.team {
+    &__text {
+        margin-bottom: 3.75em;
+    }
+
+    &__p {
+        margin-bottom: 2.5rem;
+    }
+
+    &__members {
+        padding: 45px 60px;
+    }
+
+    &__photo {
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+    &__member {
+        display: flex;
+        align-items: center;
+    }
+
+    &__member-content {
+        display: inline-block;
+    }
+}
