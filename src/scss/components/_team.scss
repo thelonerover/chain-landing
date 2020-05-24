@@ -1,4 +1,8 @@
 .team {
+    &__title {
+        width: 66.66%;
+    }
+
     &__text {
         margin-bottom: 3.75em;
     }
@@ -7,21 +11,58 @@
         margin-bottom: 2.5rem;
     }
 
-    &__members {
+    &__card {
         padding: 45px 60px;
+        box-shadow: 0px 5px 10px rgba(97, 148, 165, 0.15);
+        border-radius: 0.5rem;
     }
 
     &__photo {
         display: inline-block;
         border-radius: 50%;
+        margin-right: 30px;
     }
 
     &__member {
         display: flex;
         align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__member-content {
         display: inline-block;
+    }
+
+    &__name {
+        display: block;
+        font-family: $gilroy;
+        font-size: 1rem;
+        line-height: 120%;
+        margin-bottom: .5rem;
+    }
+
+    &__position {
+        display: block;
+        font-family: $gilroy;
+        font-size: 1rem;
+        line-height: 110%;
+        margin-bottom: 1.5rem;
+    }
+
+    &__buttons {
+        display: flex;
+    }
+
+    &__button {
+        padding: .5rem 1rem;
+        box-sizing: border-box;
+        border: 2px solid $accent;
+
+        &:first-child {
+            margin-right: 1rem;  
+        }
     }
 }
