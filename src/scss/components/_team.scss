@@ -56,13 +56,20 @@
         display: flex;
     }
 
+    &__visit-button {
+        padding: 1.5rem 4rem;
+    }
+
     &__button {
         padding: .5rem 1rem;
         box-sizing: border-box;
         border: 2px solid $accent;
+        background-color: transparent;
+        margin-right: 1rem;  
 
-        &:first-child {
-            margin-right: 1rem;  
+        &:hover {
+            text-decoration: underline;
+            background-color: $accent;
         }
     }
 }
