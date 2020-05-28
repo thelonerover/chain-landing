@@ -2,4 +2,12 @@
     padding-top: 7rem;
     padding-bottom: 10rem;
     background-color: $theme;
+    color: $white;
+
+    &__title {
+        font-family: $gilroy;
+        font-size: 2rem;
+        line-height: 120%;
+        font-weight: bold;
+    }
 }
