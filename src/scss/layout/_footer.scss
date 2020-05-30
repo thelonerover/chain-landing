@@ -4,10 +4,70 @@
     background-color: $theme;
     color: $white;
 
+    &__item {
+        margin-bottom: 2.5rem;
+    }
+    
     &__title {
+        display: block;
+        margin-bottom: 1.5rem;
         font-family: $gilroy;
         font-size: 2rem;
         line-height: 120%;
         font-weight: bold;
+    }
+
+    &__title_offset {
+        margin-bottom: 2.5rem;
+    }
+    
+    &__button {
+        display: block;
+        padding: 0.5rem 4rem;
+        margin-bottom: 1.5rem;
+        border: 2px solid $white;
+        color: inherit;
+        background-color: transparent;
+        white-space: nowrap;
+        
+        &:hover {
+            color: $black;
+            background-color: $white;
+        }
+    }
+
+    &__nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__nav-item {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    &__nav-link {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-family: $gilroy;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__social {
+        display: inline-block;
+        margin-right: .75rem;
+    }
+
+    &__separator {
+        content: "";
+        border-top: 1px solid $theme-dark;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 }

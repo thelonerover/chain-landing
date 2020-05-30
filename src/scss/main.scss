@@ -9,10 +9,6 @@
 @import './base/base';
 @import './base/fonts'; 
 
-//Layout
-@import './layout/header';
-@import './layout/footer';
-
 //Components
 @import './components/typography';
 @import './components/button';
@@ -27,3 +23,5 @@
 @import './components/tickers';
 @import './components/why-us';
 @import './components/sign-up-form';
+@import './layout/header';
+@import './layout/footer';
