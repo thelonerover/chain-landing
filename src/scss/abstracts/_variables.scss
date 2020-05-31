@@ -14,11 +14,10 @@ $d-gray: #666666;
 $white: #ffffff;
 $black: #222222;
 $red: #B22828;
-$green: #28B236;
+$green: #28B236; 
 
-// Spacings
-$xs: 15px;
-$sm: 20px;
-$md: 40px;
-$lg: 60px; 
-$xlg: 100px;
+//Breakpoints
+$xs: 576px
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
