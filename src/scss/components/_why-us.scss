@@ -1,16 +1,21 @@
 .why-us {
-    margin-bottom: 180px;
-    
     &__decoration {
         display: block;
-        height: 410px;
-        width: 410px;
+        height: 100%;
+        width: 100%;
+        max-height: 410px;
+        max-width: 410px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    &__row {
-        margin-bottom: 50px;
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__col {
+        margin-bottom: 2rem;
     }
 
     &__value {
@@ -26,5 +31,13 @@
         font-weight: 300;
         font-size: 1.1rem;
         color: $black;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .why-us {
+        &__mobile-hidden {
+            display: none;
+        }
     }
 }

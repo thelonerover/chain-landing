@@ -1,6 +1,4 @@
 .benefits {
-    margin-bottom: 180px;
-    
     &__row {
         margin-bottom: 4.5rem;
     }
@@ -19,7 +17,32 @@
         color: $black;
     }
 
-    &__content {
+    &__text {
         font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .benefits {
+        &__row {
+            margin-bottom: 0;
+        }
+
+        &__col {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        
+        &__icon {
+            display: inline-block;
+            max-width: 5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        &__content {
+            display: inline-block;
+        }
     }
 }

@@ -1,3 +1,9 @@
 .section {
     margin-bottom: 10rem;
 }
+
+@media screen and (max-width: $md) {
+    .section {
+        margin-bottom: 5rem;
+    }
+}
