@@ -10,7 +10,7 @@
 }
 
 .h2 {
-    margin-bottom: 60px;
+    margin-bottom: 4rem;
     font-family: $gilroy;
     font-weight: 800;
     font-size: 2.6rem;
@@ -49,4 +49,19 @@
     font-weight: 400;
     font-size: 1rem;
     color: $black;
+}
+
+
+@media screen and (max-width: $md) {
+    .h2 {
+        margin-bottom: 3rem;
+
+        &_mb-sm {
+            margin-bottom: .5rem;
+        }
+
+        &__subtitle {
+            margin-bottom: 2.5rem;
+        }
+    }
 }

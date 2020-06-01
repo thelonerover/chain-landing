@@ -27,6 +27,7 @@
     &__value-wrapper {
         margin-bottom: 15px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
     }
 
@@ -167,6 +168,19 @@
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .tickers {
+        &__row {
+            margin-bottom: 0;
+        }
+
+        &__item {
+            background-size: cover;
+            margin-bottom: 1rem;
         }
     }
 }

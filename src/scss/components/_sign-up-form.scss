@@ -68,13 +68,15 @@
     .sign-up-form {
         &_vertical {
             > .sign-up-form__field {
-    
+                width: 100%;
+
                 &:not(:last-child) {
                     margin-bottom: 1.5rem;
                 }
             }
     
             > .sign-up-form__submit {
+                width: 100%;
             }
         }
     }
