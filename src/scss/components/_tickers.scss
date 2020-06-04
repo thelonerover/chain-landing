@@ -3,6 +3,10 @@
         margin-bottom: 1rem;
     }
 
+    &__col {
+        margin-bottom: 2rem;
+    }
+
     &__title {
         display: block;
         margin-bottom: .5rem;
@@ -57,16 +61,22 @@
         color: $black;
     }
 
+    &__sub-value-item {
+        display: inline-block;
+        margin-right: 2rem;
+    }
+
+    &__sub-value-item_block {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
     &__sub-value {
         display: block;
         font-family: $gilroy;
         font-weight: 800;
         font-size: 1.1rem;
         color: $black;
-    }
-
-    &__sub-value_mb {
-        margin-bottom: 15px;
     }
 
     &_plus {
@@ -189,22 +199,23 @@
             margin-bottom: 1rem;
         }
 
+        &__info-col {
+            margin-bottom: 1rem;
+        }
+
         &__item {
             background-size: cover;
-            margin-bottom: 1rem;
         }
 
         &__exchange-info-content_separated {
             display: block;
             border-right: none;
         }
-    }
-}
 
-@media screen and (max-width: $sm) {
-    .tickers {
-        &__info-item {
-            // margin: 0;
+        &__sub-value-item {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
         }
     }
 }
