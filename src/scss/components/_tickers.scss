@@ -1,23 +1,21 @@
 .tickers {
-    margin-bottom: 180px;
-    
     &__row {
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
     }
 
     &__title {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: .5rem;
     }
 
     &__item {
-        padding: 20px;
+        padding: 1.5rem;
         border: 1px solid $l-stroke;
     }
 
     &__exchange {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: .8rem;
         font-family: $gilroy;
         font-weight: 300;
         font-size: 1.3rem;
@@ -25,14 +23,14 @@
     }
 
     &__value-wrapper {
-        margin-bottom: 15px;
+        margin-bottom: 1rem;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
 
     &__value {
-        margin-right: 10px;
+        margin-right: .8rem;
         font-family: $gilroy;
         font-weight: 800;
         font-size: 2rem;
@@ -40,7 +38,7 @@
     }
 
     &__rate {
-        padding: 5px 10px;
+        padding: .5rem .8rem;
         font-family: $gilroy;
         font-weight: 800;
         font-size: 1rem;
@@ -51,7 +49,7 @@
     }
 
     &__label {
-        margin-bottom: 5px;
+        margin-bottom: .5rem;
         display: block;
         font-family: $gilroy;
         font-weight: 300;
@@ -92,11 +90,19 @@
     }
 
     &__exchange-info {
-        margin-top: 60px;
-        margin-bottom: 60px;
-        padding: 30px 60px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 2rem 2.5rem;
         border-radius: 8px;
         background-color: $theme;
+    }
+
+    &__info-item {
+        display: inline-block;
+        margin-right: 2rem; 
     }
 
     &__exchange-info-title {
@@ -114,17 +120,18 @@
         font-weight: 300;
         font-size: 1.5rem;
         color: $white;
+        white-space: nowrap;
     }
 
     &__exchange-info-content_separated {
-        padding-right: 20px;
-        margin-right: 20px;
+        padding-right: 1.5rem;
+        margin-right: 1.5rem;
         border-right: 1px solid $white;
     }
 
     &__table {
         width: 100%;  
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
         border-collapse: collapse; 
         table-layout: fixed;
     }
@@ -134,7 +141,7 @@
     }
     
     &__th {
-        padding: 10px;
+        padding: .8rem;
         font-family: $gilroy;
         font-weight: 800;
         font-size: 1.1rem;
@@ -142,8 +149,8 @@
     }
 
     &__td {
-        padding: 10px 15px;
-        margin-bottom: 15px;
+        padding: .8rem 1rem;
+        margin-bottom: 1rem;
         font-family: $gilroy;
         font-weight: 300;
         font-size: 1.3rem;
@@ -172,15 +179,32 @@
     }
 }
 
-@media screen and (max-width: $sm) {
+@media screen and (max-width: $md) {
     .tickers {
         &__row {
             margin-bottom: 0;
         }
 
+        &__col {
+            margin-bottom: 1rem;
+        }
+
         &__item {
             background-size: cover;
             margin-bottom: 1rem;
+        }
+
+        &__exchange-info-content_separated {
+            display: block;
+            border-right: none;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .tickers {
+        &__info-item {
+            // margin: 0;
         }
     }
 }
