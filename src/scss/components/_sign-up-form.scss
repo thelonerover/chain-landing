@@ -64,8 +64,21 @@
     }
 }
 
+
+@media screen and (max-width: $sm) {
+    .sign-up-form {
+        &__field {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
 @media screen and (max-width: $md) {
     .sign-up-form {
+        &__field {
+            margin-bottom: 1rem;
+        }
+
         &_vertical {
             > .sign-up-form__field {
                 width: 100%;

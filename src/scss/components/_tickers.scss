@@ -103,7 +103,7 @@
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        margin-top: 4rem;
+        margin-top: 2rem;
         margin-bottom: 4rem;
         padding: 2rem 2.5rem;
         border-radius: 8px;
@@ -139,11 +139,15 @@
         border-right: 1px solid $white;
     }
 
+    &__table-wrapper {
+        overflow: auto;
+    }
+
     &__table {
         width: 100%;  
         margin-bottom: 2.5rem;
         border-collapse: collapse; 
-        table-layout: fixed;
+        table-layout: auto;
     }
 
     &__thead {
@@ -207,6 +211,11 @@
             background-size: cover;
         }
 
+        &__exchange-info {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
         &__exchange-info-content_separated {
             display: block;
             border-right: none;
@@ -216,6 +225,15 @@
             &:not(:last-child) {
                 margin-bottom: 1rem;
             }
+        }
+
+        &__th {
+            padding: .3rem .6rem;
+        }
+
+        &__td {
+            padding: .3rem .6rem;
+            font-size: 1rem;
         }
     }
 }
