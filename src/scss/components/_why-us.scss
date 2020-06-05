@@ -36,6 +36,10 @@
 
 @media screen and (max-width: $sm) {
     .why-us {
+        &__col {
+            width: 50%;
+        }
+
         &__mobile-hidden {
             display: none;
         }
