@@ -151,6 +151,11 @@
 
 @media screen and (max-width: $xs) {
     .team {
+        &__photo {
+            max-width: 8rem;
+            height: auto;
+        }
+
         &__button {
             &:not(:last-child) {
                 margin-bottom: 1rem;

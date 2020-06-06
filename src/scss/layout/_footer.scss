@@ -6,7 +6,9 @@
     font-family: $gilroy;
 
     &__item {
-        margin-bottom: 2.5rem;
+        &:not(:last-child) {
+            margin-bottom: 2.5rem;
+        }
     }
     
     &__title {
@@ -90,5 +92,35 @@
     &__right {
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+
+@media screen and (max-width: $sm) {
+    .footer {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+        text-align: center;
+
+        &__col {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        &__nav-link {
+            text-decoration: underline;
+
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+            }
+        }
+    
     }
 }
