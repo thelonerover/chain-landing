@@ -6,8 +6,20 @@ import "owl.carousel/dist/owl.carousel.js"
 
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
-        items: 6,
         dots: true,
-        dotClass: ["owl-dot owl-dot_outlined"]
+        dotClass: ["owl-dot owl-dot_outlined"],
+        responsive : {
+            368: {
+                items: 2
+            },
+
+            767: {
+                items: 4
+            },
+
+            1200: {
+                items: 6
+            }
+        }
     });
 });
