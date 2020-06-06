@@ -9,6 +9,11 @@ $(document).ready(function(){
         dots: true,
         dotClass: ["owl-dot owl-dot_outlined"],
         responsive : {
+            260: {
+                items: 1,
+                dots: false,
+            },
+
             368: {
                 items: 2
             },
